@@ -20,6 +20,7 @@
     --chip:#f3e6d8;
   }
   *{box-sizing:border-box;}
+  html{font-size:18px;}
   body{
     margin:0;
     font-family:"PingFang TC","Microsoft JhengHei","Noto Sans TC",-apple-system,BlinkMacSystemFont,sans-serif;
@@ -42,14 +43,14 @@
     margin-bottom:24px;
   }
   header h1{
-    font-size:1.5rem;
-    margin:0 0 4px;
+    font-size:1.9rem;
+    margin:0 0 6px;
     letter-spacing:1px;
   }
   header p{
     margin:0;
     color:var(--muted);
-    font-size:0.9rem;
+    font-size:1.05rem;
   }
   .card{
     background:var(--card);
@@ -63,7 +64,7 @@
     justify-content:space-between;
     align-items:center;
     margin-bottom:18px;
-    font-size:0.85rem;
+    font-size:1rem;
     color:var(--muted);
     flex-wrap:wrap;
     gap:8px;
@@ -71,16 +72,16 @@
   .stat-bar .badge{
     background:var(--chip);
     color:var(--accent-dark);
-    padding:4px 12px;
+    padding:5px 14px;
     border-radius:999px;
     font-weight:600;
   }
   .progress-track{
-    height:6px;
+    height:7px;
     border-radius:999px;
     background:var(--line);
     overflow:hidden;
-    margin-bottom:20px;
+    margin-bottom:22px;
   }
   .progress-fill{
     height:100%;
@@ -88,29 +89,30 @@
     transition:width .3s ease;
   }
   h2.qtitle{
-    font-size:1.1rem;
-    line-height:1.7;
+    font-size:1.4rem;
+    line-height:1.8;
     white-space:pre-wrap;
-    margin:0 0 20px;
+    margin:0 0 22px;
   }
   .options{
     display:flex;
     flex-direction:column;
-    gap:10px;
-    margin-bottom:18px;
+    gap:12px;
+    margin-bottom:20px;
   }
   .opt{
     text-align:left;
-    padding:14px 16px;
+    padding:16px 18px;
     border-radius:12px;
     border:1.5px solid var(--line);
     background:#fdfcf9;
     cursor:pointer;
-    font-size:0.98rem;
+    font-size:1.2rem;
+    line-height:1.6;
     color:var(--ink);
     transition:border-color .15s, background .15s, transform .1s;
     display:flex;
-    gap:10px;
+    gap:12px;
     align-items:flex-start;
   }
   .opt:hover:not(:disabled){
@@ -120,11 +122,11 @@
   .opt:active:not(:disabled){transform:scale(0.99);}
   .opt .num{
     flex:0 0 auto;
-    width:22px;height:22px;
+    width:28px;height:28px;
     border-radius:50%;
     background:var(--chip);
     color:var(--accent-dark);
-    font-size:0.8rem;
+    font-size:1rem;
     display:flex;align-items:center;justify-content:center;
     font-weight:700;
   }
@@ -143,15 +145,15 @@
 
   .feedback{
     border-radius:12px;
-    padding:14px 16px;
-    margin-bottom:18px;
-    font-size:0.95rem;
-    line-height:1.6;
+    padding:16px 18px;
+    margin-bottom:20px;
+    font-size:1.15rem;
+    line-height:1.7;
   }
   .feedback.correct{background:var(--correct-bg);color:var(--correct);}
   .feedback.wrong{background:var(--wrong-bg);color:var(--wrong);}
-  .feedback .verdict{font-weight:700;font-size:1.05rem;display:block;margin-bottom:4px;}
-  .feedback .exp{color:var(--ink);opacity:0.8;font-size:0.88rem;margin-top:8px;white-space:pre-wrap;}
+  .feedback .verdict{font-weight:700;font-size:1.3rem;display:block;margin-bottom:6px;}
+  .feedback .exp{color:var(--ink);opacity:0.85;font-size:1.05rem;line-height:1.65;margin-top:10px;white-space:pre-wrap;}
 
   .actions{
     display:flex;
@@ -160,10 +162,10 @@
   }
   button.btn{
     flex:1 1 auto;
-    padding:13px 18px;
+    padding:15px 20px;
     border-radius:12px;
     border:none;
-    font-size:0.95rem;
+    font-size:1.1rem;
     font-weight:600;
     cursor:pointer;
     transition:filter .15s, transform .1s;
@@ -187,12 +189,12 @@
   }
   .mode-tabs button{
     flex:1;
-    padding:10px 12px;
+    padding:12px 12px;
     border:none;
     border-radius:9px;
     background:transparent;
     color:var(--accent-dark);
-    font-size:0.9rem;
+    font-size:1.05rem;
     font-weight:600;
     cursor:pointer;
   }
@@ -201,24 +203,24 @@
     box-shadow:0 2px 6px rgba(30,40,60,0.08);
   }
 
-  .setup-field{margin-bottom:18px;}
-  .setup-field label{display:block;font-size:0.9rem;color:var(--muted);margin-bottom:8px;}
+  .setup-field{margin-bottom:20px;}
+  .setup-field label{display:block;font-size:1.05rem;color:var(--muted);margin-bottom:10px;}
   .setup-field input[type=number]{
     width:100%;
-    padding:12px 14px;
+    padding:14px 16px;
     border-radius:10px;
     border:1.5px solid var(--line);
-    font-size:1rem;
+    font-size:1.2rem;
     font-family:inherit;
   }
-  .setup-hint{font-size:0.8rem;color:var(--muted);margin-top:6px;}
-  .quick-picks{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;}
+  .setup-hint{font-size:0.95rem;color:var(--muted);margin-top:8px;}
+  .quick-picks{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
   .quick-picks button{
-    padding:6px 12px;
+    padding:8px 14px;
     border-radius:999px;
     border:1px solid var(--line);
     background:#fff;
-    font-size:0.8rem;
+    font-size:0.95rem;
     cursor:pointer;
     color:var(--accent-dark);
   }
@@ -227,13 +229,13 @@
   .topic-list{
     display:flex;
     flex-direction:column;
-    gap:8px;
+    gap:10px;
   }
   .topic-item{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:14px 16px;
+    padding:16px 18px;
     border-radius:12px;
     border:1.5px solid var(--line);
     background:#fdfcf9;
@@ -241,33 +243,37 @@
     text-align:left;
   }
   .topic-item:hover{border-color:var(--accent);background:#f3f8fb;}
-  .topic-item .tname{font-size:0.95rem;font-weight:600;}
-  .topic-item .tcount{font-size:0.78rem;color:var(--muted);margin-top:2px;}
-  .topic-item .tarrow{color:var(--accent);font-size:1.1rem;}
+  .topic-item .tname{font-size:1.12rem;font-weight:600;}
+  .topic-item .tcount{font-size:0.92rem;color:var(--muted);margin-top:3px;}
+  .topic-item .tarrow{color:var(--accent);font-size:1.3rem;}
 
   .summary-row{
     display:flex;
     justify-content:space-between;
-    padding:10px 0;
+    padding:12px 0;
     border-bottom:1px solid var(--line);
-    font-size:0.92rem;
+    font-size:1.08rem;
   }
   .summary-row:last-child{border-bottom:none;}
   .mode-banner{
-    font-size:0.8rem;
+    font-size:0.95rem;
     background:#e4edf3;
     color:var(--accent-dark);
-    padding:6px 12px;
+    padding:7px 14px;
     border-radius:999px;
     display:inline-block;
-    margin-bottom:14px;
+    margin-bottom:16px;
     font-weight:600;
   }
   footer{
     text-align:center;
     color:var(--muted);
-    font-size:0.78rem;
+    font-size:0.9rem;
     margin-top:24px;
+  }
+  @media (max-width:480px){
+    header h1{font-size:1.4rem;letter-spacing:0.5px;}
+    header p{font-size:0.95rem;}
   }
 </style>
 </head>
@@ -552,7 +558,7 @@ function renderRoundDone(){
   const totalAnswered = state.order.length;
   app.innerHTML = `
     <div style="text-align:center;margin-bottom:20px;">
-      <div style="font-size:2rem;margin-bottom:8px;">🎉</div>
+      <div style="font-size:2.6rem;margin-bottom:8px;">🎉</div>
       <h2 class="qtitle" style="text-align:center;">本回合作答完成！</h2>
       <div class="mode-banner">${escapeHtml(state.roundLabel)}</div>
     </div>
